@@ -2,10 +2,10 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../assets/logo_etno.png';
 import './Header.css';
 
 
-import logo from '../assets/logo_etno.png';
 
 const Header = () => {
     return (
