@@ -1,0 +1,46 @@
+# ##############################################################################
+# .gitignore para Proyectos React + Vite + Node.js
+# ##############################################################################
+
+# === Logs ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === Dependencias ===
+node_modules/
+
+# === Compilación y Construcción (Build) ===
+dist/
+dist-ssr/
+*.local
+
+# === Entorno y Variables Secretas ===
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Directorios y Archivos de Editor/IDE ===
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json # Esta excepción permite subir la lista de extensiones recomendadas
+
+# IntelliJ (WebStorm, etc.)
+.idea/
+
+# System Files (macOS, Windows)
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
