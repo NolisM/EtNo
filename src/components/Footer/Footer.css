@@ -1,0 +1,37 @@
+.bg-etno-navy {
+    background-color: var(--etno-text-navy) !important;
+}
+
+.footer-section {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.footer-icon-link {
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none !important;
+}
+
+.footer-icon-link:hover {
+    color: var(--etno-brand-lila) !important;
+    transform: scale(1.1);
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.italic {
+    font-style: italic;
+}

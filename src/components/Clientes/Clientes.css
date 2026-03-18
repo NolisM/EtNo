@@ -1,0 +1,27 @@
+.clientes-section {
+    position: relative;
+    z-index: 1;
+}
+
+.cliente-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border-radius: 12px !important;
+}
+
+.cliente-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-container-prof {
+    width: 80px;
+    height: 80px;
+}
+
+.bg-primary-light {
+    background-color: rgba(177, 151, 252, 0.1) !important;
+}
+
+.cliente-card .card-title {
+    letter-spacing: 0.5px;
+}

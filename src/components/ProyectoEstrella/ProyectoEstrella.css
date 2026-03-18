@@ -1,0 +1,31 @@
+.proyectos-section {
+    position: relative;
+    z-index: 1;
+}
+
+.proyecto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border-radius: 12px !important;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.proyecto-img {
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.proyecto-card .card-title {
+    letter-spacing: 0.3px;
+}
+
+.btn-cta-proyecto-prof {
+
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}

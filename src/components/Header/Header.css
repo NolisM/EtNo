@@ -1,73 +1,99 @@
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
-  --text-color: #333;
+  --etno-brand-lila: #B197FC;
+  --etno-lila-hover: #9676ED;
+  --etno-text-navy: #001F3F;
+  --muted-dark-color: #6C757D;
 }
 
 
 .custom-navbar {
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 1030;
+  background-color: #FFFFFF !important;
+
 }
 
 
 .navbar-logo {
   height: 40px;
+
   width: auto;
 }
 
 
 .navbar-title {
-  font-size: 1.25rem;
-  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
 }
 
 
-.nav-item-custom {
-  color: var(--text-color) !important;
+.nav-link-prof {
+  color: var(--etno-text-navy) !important;
+
   font-weight: 500;
-  margin-left: 10px;
-  margin-right: 10px;
-  transition: color 0.2s;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 8px 0 !important;
+  transition: color 0.2s ease;
+  position: relative;
+
 }
 
-.nav-item-custom:hover {
-  color: var(--primary-color) !important;
+
+.nav-link-prof:hover,
+.nav-link-prof:focus {
+  color: var(--etno-brand-lila) !important;
 }
 
 
-.btn-cta {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  padding: 10px 20px !important;
-  border-radius: 50px !important;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: background-color 0.2s, transform 0.2s !important;
-  display: inline-flex;
-  align-items: center;
+.nav-link-prof::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--etno-brand-lila);
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
-.btn-cta:hover {
-  background-color: #0a58ca !important;
-  transform: translateY(-2px);
-  color: white !important;
+.nav-link-prof:hover::after {
+  width: 100%;
+  left: 0;
 }
 
-/* Ajustes para móviles */
+
+.btn-cta-header-prof {
+
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+
+.navbar-toggler {
+  color: var(--etno-brand-lila) !important;
+
+}
+
 @media (max-width: 991px) {
   .custom-navbar .navbar-collapse {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 20px;
     margin-top: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  .nav-item-custom {
-    margin: 10px 0;
+  .nav-link-prof {
+    margin: 8px 0;
     text-align: center;
+    width: 100%;
+  }
+
+  .nav-link-prof::after {
+    display: none;
   }
 }

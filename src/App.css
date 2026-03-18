@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --etno-brand-lila: #B197FC;
+  --etno-lila-hover: #9676ED;
+  --etno-text-navy: #001F3F;
+  --muted-dark-color: #6C757D;
+  --light-gray-color: #F8F9FA;
+  --white-color: #FFFFFF;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-etno-text-navy {
+  color: var(--etno-text-navy) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.text-muted-dark {
+  color: var(--muted-dark-color) !important;
 }
 
-.card {
-  padding: 2em;
+.text-etno-lila {
+  color: var(--etno-brand-lila) !important;
 }
 
-.read-the-docs {
-  color: #888;
+.btn-primary {
+  background-color: var(--etno-brand-lila) !important;
+  border-color: var(--etno-brand-lila) !important;
+  color: white !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 6px !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--etno-lila-hover) !important;
+  border-color: var(--etno-lila-hover) !important;
+  color: white !important;
+}
+
+.btn-navy {
+  background-color: var(--etno-text-navy) !important;
+  border-color: var(--etno-text-navy) !important;
+  color: white !important;
+}
+
+.btn-navy:hover {
+  background-color: var(--etno-lila-hover) !important;
+  border-color: var(--etno-lila-hover) !important;
+  color: white !important;
 }
